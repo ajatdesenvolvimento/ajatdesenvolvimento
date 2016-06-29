@@ -1,0 +1,126 @@
+// Variables
+$white: #FFF;
+$ajat-blue: #119EE6;
+
+// Mixins
+@mixin font-face($family, $path, $svg, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $family;
+    src: url('#{$path}.eot');
+    src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg##{$svg}') format('svg');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes $animation-name {
+    @content;
+  }
+  @-moz-keyframes $animation-name {
+    @content;
+  }
+  @keyframes $animation-name {
+    @content;
+  }
+}
+@mixin abs-pos ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  position: absolute;
+}
+
+// Includes
+@include keyframes(blink) {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+// Classes
+section {
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
+  .intro-section {
+    background-color: $ajat-blue;
+  }
+  .about-section {
+    background-color: #eee;
+  }
+  .services-section {
+    background-color: $white;
+  }
+  .partners-section {
+    background-color: #eee;
+  }
+}
+.navbar-inverse {
+  .navbar-nav {
+    li {
+      a {
+        font : {
+          family: font-face('Nexa Light','fonts/Nexa-Light.otf');
+          size: 1.3em;
+        }
+        text-transform: uppercase;
+        color: $white;
+      }
+    }
+    .active {
+      a {
+        &:hover,&:focus {
+          color: $ajat-blue;
+          background-color: inherit;
+        }
+      }
+    }
+  }
+}
+
+.intro-section {
+  &::after {
+    content: "";
+    background:url(../images/img/BG_Home.png);
+    z-index: -1;
+    @include abs-pos(0,0,0,0);
+  }
+  .btn-round {
+    margin-top: 10%;
+    border-radius: 50%;
+  }
+  .btn-transparent {
+    background-color: transparent;
+    border-color: $white;
+    color: $white;
+    &:hover{
+      color: $white;
+    }
+  }
+  .logo {
+    width: 25%;
+  }
+  .header-text {
+    display: block;
+  }
+  .typed {
+      font-family: font-face('manteka','fonts/Nexa-Light.otf');
+      display: inline-block;
+      margin: 0;
+      color: $white;
+  }
+  /*for cursor stay blinking*/
+  .typed-cursor{
+      opacity: 1;
+      -webkit-animation: blink 0.7s infinite;
+      -moz-animation: blink 0.7s infinite;
+      animation: blink 0.7s infinite;
+      font-size: 40px;
+      margin: 0 10px;
+      color: $white;
+  }
+  .author {
+    font-size: 14px;
+  }
+}
