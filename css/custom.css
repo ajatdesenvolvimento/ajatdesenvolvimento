@@ -5,11 +5,11 @@
 }
 @font-face {
   font-family: 'Nexa Bold';
-  src: url("../fonts/Nexa-Bold.otf") format("opentype");
+  src: url(../fonts/Nexa-Bold.otf) format("opentype");
 }
 @font-face {
   font-family: 'Nexa Light';
-  src: url("../fonts/Nexa-Light.otf") format("opentype");
+  src: url(../fonts/Nexa-Light.otf) format("opentype");
 }
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-nav > li > a {
@@ -94,4 +94,59 @@
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+#intro{
+  background: url(../img/BG_Home.png);
+}
+.ajat-text{
+  font-family: 'Nexa Light';
+  font-size:2.3em;
+}
+.ajat-emphasis-text{
+  font-family: 'Nexa Light';
+  font-size: 2.5em;
+  color:#119EE6;
+}
+#ajat-service-logo{
+  width: 200px !important;
+  z-index:1;
+}
+.big-ball{
+  width: 35px;
+  height: 35px;
+  background: #303030;
+  border-radius: 50%;
+  z-index:-1;
+  margin-left:43.8888%;
+  margin-top:-7.99999%;
+}
+.small-ball{
+  width: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  background: #303030;
+  border-radius: 50%;
+  z-index:1;
+  margin-top: 3px;
+}
+.small-ball-1{
+  margin-left:210px;
+}
+.small-ball-1{
+  margin-left:210px;
+}
+.margin-line-right-49{
+  margin-right:49.88%;
+}
+.margin-line-left-0{
+  margin-right:200px !important;
+}
+.vertical-line{
+  border-right:2px solid #303030;
+  max-height: 10px;
+  min-height: 10px;
+  z-index: -1;
+}
+.horizontal-line{
+  border-top:2px solid #303030
 }

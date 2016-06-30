@@ -5,7 +5,9 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="description" content="AJAT Desenvolvimento trabalha com soluções web como sites e sistemas web. Um dos nossos diferenciais no mercado é que o cliente participa de cada etapa do desenvolvimento, possibilitando-o ter contato com o seu produto de forma direta.">
     <meta name="keywords" content="ajat, ajat desenvolvimento, desenvolvimento de sites, sistemas para computador, soluções web, construção de sites">
     <meta name="author" content="AJAT Desenvolvimento">
@@ -16,6 +18,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -53,12 +56,34 @@
 
     <!-- Services Section -->
     <section id="services" class="services-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Sobre e Depoimentos</h1>
-                </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="ajat-text">Conheça os nossos</div>
+              <div class="ajat-emphasis-text animated bounceInLeft">SERVIÇOS</div>
+              <div class="ajat-text">ofertados!</div>
             </div>
+            <div class="col-lg-3">
+              <img src="img/ajat-flat-black-logo.png" id="ajat-service-logo" />
+              <div class="big-ball"></div>
+              <div class="vertical-line margin-line-right-49"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-7 col-lg-offset-2 horizontal-line"></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 col-lg-offset-2">
+              <div class="vertical-line margin-line-left-0">
+              </div>
+              <div class="small-ball small-ball-1">
+              </div>
+            </div>
+          </div>
+            <!-- <div class="row" style="border:2px dotted blue">
+                <div class="col-lg-12" style="border:1px solid red">
+                </div>
+            </div> -->
         </div>
     </section>
 
