@@ -64,7 +64,7 @@
             <div class="col-lg-3">
               <img src="img/ajat-flat-black-logo.png" id="ajat-service-logo" />
               <div class="big-ball"></div>
-              <div class="vertical-line margin-line-right-49"></div>
+              <div class="vertical-line margin-line-right-1"></div>
             </div>
           </div>
           <div class="row">
@@ -72,16 +72,22 @@
           </div>
           <div class="row">
             <div class="col-lg-2 col-lg-offset-2">
-              <div class="vertical-line margin-line-left-0">
+              <div class="vertical-line margin-line-left-1">
               </div>
               <div class="small-ball small-ball-1">
               </div>
+              <img src="img/Design.png" id="design" />
             </div>
           </div>
-            <!-- <div class="row" style="border:2px dotted blue">
-                <div class="col-lg-12" style="border:1px solid red">
-                </div>
-            </div> -->
+          <div class="row">
+            <div class="col-lg-2 col-lg-offset-2">
+              <div class="vertical-line margin-line-left-2">
+              </div>
+              <div class="small-ball small-ball-2">
+              </div>
+              <img src="img/SistemasWeb.png" id="sistemasWeb" />
+            </div>
+          </div>
         </div>
     </section>
 

@@ -136,11 +136,11 @@
 .small-ball-1{
   margin-left:210px;
 }
-.margin-line-right-49{
+.margin-line-right-1{
   margin-right:49.88%;
 }
-.margin-line-left-0{
-  margin-right:200px !important;
+.margin-line-left-1{
+  margin-right:200px;
 }
 .vertical-line{
   border-right:2px solid #303030;
@@ -166,4 +166,62 @@ and (max-device-width : 480px) {
     /*padding:15px;*/
     right:0;position:absolute !important;
   }
+  #ajat-service-logo{
+    width: 100px !important;
+    z-index:1;
+  }
+  .big-ball{
+    width: 35px;
+    height: 35px;
+    background: #303030;
+    border-radius: 50%;
+    z-index:-1;
+    margin-left:43.8888%;
+    margin-top:-7.99999%;
+  }
+  .horizontal-line{
+    border-top:2px solid #303030;
+    width:80%;
+    margin-left:10%
+  }
+  .vertical-line{
+    border-right:2px solid #303030;
+    max-height: 10px;
+    min-height: 10px;
+    z-index: -1;
+  }
+  .margin-line-left-1{
+    margin-right: 93% !important;
+  }
+  .margin-line-left-2{
+    margin-right: 78% !important;
+  }
+  .small-ball{
+    width: 12px;
+    min-height: 12px;
+    max-height: 12px;
+    background: #303030;
+    border-radius: 50%;
+    z-index:1;
+    margin-top: 3px;
+  }
+  .small-ball-1{
+    margin-left: 4% !important;
+    margin-top:-0.5% !important
+  }
+  .small-ball-2{
+    margin-left: 40% !important;
+    margin-top:-0.5% !important
+  }
+  #design{
+    width:15%;
+    margin-left:-90% !important;
+    margin-top: -2.30% !important;
+  }
+  #sistemasWeb{
+    width:15%;
+    margin-left:-20% !important;
+    margin-top: -2.30% !important;
+  }
+
 }
