@@ -29,6 +29,7 @@
 .intro-section::after {
   content: "";
   background:url(../img/BG_Home.png);
+  opacity: 0.5;
   /*opacity: 0.9;
   background: rgba(0, 0, 0, 0.5);*/
   top: 0;
@@ -95,9 +96,9 @@
     50% { opacity:0; }
     100% { opacity:1; }
 }
-#intro{
+/*#intro{
   background: url(../img/BG_Home.png);
-}
+}*/
 .ajat-text{
   font-family: 'Nexa Light';
   font-size:2.3em;
@@ -149,4 +150,20 @@
 }
 .horizontal-line{
   border-top:2px solid #303030
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  .navbar-header{
+    width:auto !important; /*ajuste necessário para não bugar o menu*/
+  }
+  .navbrand-responsive{
+    position: relative;
+  }
+  .button-menu-responsive{
+    /*padding:15px;*/
+    right:0;position:absolute !important;
+  }
 }

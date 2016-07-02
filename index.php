@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="description" content="AJAT Desenvolvimento trabalha com soluções web como sites e sistemas web. Um dos nossos diferenciais no mercado é que o cliente participa de cada etapa do desenvolvimento, possibilitando-o ter contato com o seu produto de forma direta.">
     <meta name="keywords" content="ajat, ajat desenvolvimento, desenvolvimento de sites, sistemas para computador, soluções web, construção de sites">
     <meta name="author" content="AJAT Desenvolvimento">
