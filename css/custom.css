@@ -30,8 +30,7 @@
   content: "";
   background:url(../img/BG_Home.png);
   opacity: 0.5;
-  /*opacity: 0.9;
-  background: rgba(0, 0, 0, 0.5);*/
+  /*opacity: 0.9;*/
   top: 0;
   left: 0;
   bottom: 0;
@@ -50,6 +49,7 @@
     display: inline-block;
     margin: 0;
     color: #FFF;
+    font-size: 25px;
 }
 /*for cursor stay blinking*/
 .typed-cursor{
@@ -101,12 +101,17 @@
 }*/
 .ajat-text{
   font-family: 'Nexa Light';
-  font-size:2.3em;
+  font-size:2.8em;
+}
+.img-services{
+  width:100%;
+  margin-left:-400px;
 }
 .ajat-emphasis-text{
   font-family: 'Nexa Light';
   font-size: 2.5em;
   color:#119EE6;
+  font-weight: 300;
 }
 #ajat-service-logo{
   width: 200px !important;
@@ -156,6 +161,13 @@
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
+  .container-services{
+    margin-top:-54px !important;
+  }
+  .img-services{
+    width:100%;
+    margin-left:0;
+  }
   .navbar-header{
     width:auto !important; /*ajuste necessário para não bugar o menu*/
   }
@@ -165,63 +177,6 @@ and (max-device-width : 480px) {
   .button-menu-responsive{
     /*padding:15px;*/
     right:0;position:absolute !important;
-  }
-  #ajat-service-logo{
-    width: 100px !important;
-    z-index:1;
-  }
-  .big-ball{
-    width: 35px;
-    height: 35px;
-    background: #303030;
-    border-radius: 50%;
-    z-index:-1;
-    margin-left:43.8888%;
-    margin-top:-7.99999%;
-  }
-  .horizontal-line{
-    border-top:2px solid #303030;
-    width:80%;
-    margin-left:10%
-  }
-  .vertical-line{
-    border-right:2px solid #303030;
-    max-height: 10px;
-    min-height: 10px;
-    z-index: -1;
-  }
-  .margin-line-left-1{
-    margin-right: 93% !important;
-  }
-  .margin-line-left-2{
-    margin-right: 78% !important;
-  }
-  .small-ball{
-    width: 12px;
-    min-height: 12px;
-    max-height: 12px;
-    background: #303030;
-    border-radius: 50%;
-    z-index:1;
-    margin-top: 3px;
-  }
-  .small-ball-1{
-    margin-left: 4% !important;
-    margin-top:-0.5% !important
-  }
-  .small-ball-2{
-    margin-left: 40% !important;
-    margin-top:-0.5% !important
-  }
-  #design{
-    width:15%;
-    margin-left:-90% !important;
-    margin-top: -2.30% !important;
-  }
-  #sistemasWeb{
-    width:15%;
-    margin-left:-20% !important;
-    margin-top: -2.30% !important;
   }
 
 }

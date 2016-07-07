@@ -54,41 +54,18 @@
 
     <!-- Services Section -->
     <section id="services" class="services-section">
-        <div class="container-fluid">
+        <div class="container container-services">
           <div class="row">
             <div class="col-lg-4">
               <div class="ajat-text">Conheça os nossos</div>
               <div class="ajat-emphasis-text animated bounceInLeft">SERVIÇOS</div>
               <div class="ajat-text">ofertados!</div>
             </div>
-            <div class="col-lg-3">
-              <img src="img/ajat-flat-black-logo.png" id="ajat-service-logo" />
-              <div class="big-ball"></div>
-              <div class="vertical-line margin-line-right-1"></div>
+            <div class="col-lg-8">
+              <img src="img/servicos.png" class="img-services" />
             </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-7 col-lg-offset-2 horizontal-line"></div>
-          </div>
-          <div class="row">
-            <div class="col-lg-2 col-lg-offset-2">
-              <div class="vertical-line margin-line-left-1">
-              </div>
-              <div class="small-ball small-ball-1">
-              </div>
-              <img src="img/Design.png" id="design" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-2 col-lg-offset-2">
-              <div class="vertical-line margin-line-left-2">
-              </div>
-              <div class="small-ball small-ball-2">
-              </div>
-              <img src="img/SistemasWeb.png" id="sistemasWeb" />
-            </div>
-          </div>
         </div>
+      </div>
     </section>
 
     <!-- About Section -->

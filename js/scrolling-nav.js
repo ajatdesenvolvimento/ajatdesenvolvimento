@@ -3,13 +3,15 @@ $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
+      // localStorage.setItem('currentUrl',"#intro");
+      // localStorage.setItem('toggle',1);
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
-    localStorage.setItem('currentUrl',"#intro");
+    // localStorage.setItem('currentUrl',"#intro");
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
 
@@ -19,5 +21,5 @@ $(function() {
         event.preventDefault();
         localStorage.setItem('currentUrl',$anchor.context.hash);
     });
-    
+
 });
