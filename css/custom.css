@@ -1,4 +1,7 @@
 /*$ajat-color: #119EE6;*/
+/*
+  ATENÇÃO! O BOTÃO DE ÂNCORA ESTÁ COMO HIDE!
+*/
 @font-face {
   font-family: 'manteka';
   src: url("../fonts/manteka.ttf") format("truetype");
@@ -25,7 +28,9 @@
   color: #119EE6;
   background-color: inherit;
 }
-
+.btn-scroll{
+  display: inline !important;
+}
 .intro-section::after {
   content: "";
   background:url(../img/BG_Home.png);
@@ -38,18 +43,79 @@
   position: absolute;
   z-index: -1;
 }
+.row{
+  margin-top:10px;
+}
+.h2-contato{
+  color:white;
+  opacity:1;
+  font-family: 'Nexa Light'
+}
+.btn{
+  font-family: 'Nexa Light';
+  padding: 10px !important;
+}
+input[placeholder]{
+  font-family: 'Nexa Light';
+}
+textarea[placeholder]{
+  font-family: 'Nexa Light';
+}
+input[type=text],input[type=email],input[type=tel]{
+  padding: 25px !important;
+}
+.contact-section{
+  content: "";
+  background:url(../img/contato.jpg);
+  opacity: 0.9;
+  /*opacity: 0.9;*/
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
 .logo {
+  margin-top: 40px !important;
   width: 25%;
+}
+.team-profile{
+  border-radius: 100%;
+  width: 140px;
+  height: 140px;
+}
+.nick-name{
+  margin-top: 8px;
+  font-family: 'Nexa Bold'
+}
+.staff-description{
+  font-family: 'Nexa Light';
+  color: #49484e;
+  text-shadow: 1px 1px 2px #fff;
+}
+.product-image{
+  width:200px;
+}
+.nav{
+  font-size: 0.76em;
 }
 .header-text {
   display: block;
 }
+textarea{
+  resize: none;
+}
+.well{
+  background-color: #424041;
+  border: none;
+  margin-bottom: 0px !important;
+}
 .typed {
+    margin-top: 30px !important;
     font-family: "manteka","Agency FB",monospace;
     display: inline-block;
     margin: 0;
     color: #FFF;
-    font-size: 25px;
+    font-size: 35px !important;
 }
 /*for cursor stay blinking*/
 .typed-cursor{
@@ -57,12 +123,13 @@
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
-    font-size: 40px;
+    font-size: 40px !important;
     margin: 0 10px;
     color: #FFF;
 }
 .author {
   font-size: 14px;
+  word-break: break-all !important;
 }
 .intro-section .btn-round {
   margin-top: 10%;
@@ -96,87 +163,387 @@
     50% { opacity:0; }
     100% { opacity:1; }
 }
-/*#intro{
-  background: url(../img/BG_Home.png);
-}*/
 .ajat-text{
   font-family: 'Nexa Light';
-  font-size:2.8em;
+  font-size:2.8em !important;
+}
+.block-main-services{
+  margin-top:20px !important;
 }
 .img-services{
   width:100%;
-  margin-left:-400px;
+  margin-left:-400px !important;
 }
 .ajat-emphasis-text{
   font-family: 'Nexa Light';
-  font-size: 2.5em;
+  font-size: 2.5em !important;
   color:#119EE6;
   font-weight: 300;
 }
 #ajat-service-logo{
-  width: 200px !important;
+  width: 200px;
   z-index:1;
 }
-.big-ball{
-  width: 35px;
-  height: 35px;
-  background: #303030;
-  border-radius: 50%;
-  z-index:-1;
-  margin-left:43.8888%;
-  margin-top:-7.99999%;
+.item>img{
+  margin-right: auto !important;
+  margin-left: auto !important;
+  width:800px !important;
+  height:400px !important;
 }
-.small-ball{
-  width: 20px;
-  min-height: 20px;
-  max-height: 20px;
-  background: #303030;
-  border-radius: 50%;
-  z-index:1;
-  margin-top: 3px;
+.container-portifolio{
+  margin-top:-80px;
 }
-.small-ball-1{
-  margin-left:210px;
-}
-.small-ball-1{
-  margin-left:210px;
-}
-.margin-line-right-1{
-  margin-right:49.88%;
-}
-.margin-line-left-1{
-  margin-right:200px;
-}
-.vertical-line{
-  border-right:2px solid #303030;
-  max-height: 10px;
-  min-height: 10px;
-  z-index: -1;
-}
-.horizontal-line{
-  border-top:2px solid #303030
-}
-
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-  .container-services{
-    margin-top:-54px !important;
-  }
-  .img-services{
-    width:100%;
-    margin-left:0;
-  }
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .navbar-header{
-    width:auto !important; /*ajuste necessário para não bugar o menu*/
+    width:auto !important;
   }
   .navbrand-responsive{
     position: relative;
   }
   .button-menu-responsive{
-    /*padding:15px;*/
     right:0;position:absolute !important;
   }
+  .ajat-text{
+    font-size:2.8em;
+  }
+  .ajat-emphasis-text{
+    font-size: 2.5em;
+  }
+  .block-text-services{
+    float: none;
+    width:100% !important;
+    display: block;
+  }
+  .block-image-services{
+    float:none;
+    width:100% !important;
+    display: block;
+  }
+  .img-services{
+    width:100%;
+    margin-left:0;
+  }
+  .logo {
+    width: 35% !important;
+    margin-top:40px !important;
+  }
+  .typed,.typed-cursor{
+    margin-top: 40px !important;
+    font-size: 1.5em !important;
+  }
+}
 
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+  .logo{
+    width:15% ;
+    margin-top: -50px;
+  }
+  .typed,.typed-cursor{
+    font-size: 1.2em;
+  }
+  .btn-scroll{
+    display: none !important;
+  }
+  .navbar-header{
+    width:auto !important;
+  }
+  .navbrand-responsive{
+    position: relative;
+  }
+  .button-menu-responsive{
+    right:0;position:absolute !important;
+  }
+  .block-main-services{
+    margin-top: -55px;
+  }
+  .block-text-services{
+    float: left;
+    width:45%;
+  }
+  .block-image-services{
+    float:right;
+    width:55%;
+  }
+  .img-services{
+    width:100%;
+    margin-left:0;
+  }
+  .ajat-text{
+    font-size:1.8em;
+  }
+  .ajat-emphasis-text{
+    font-size: 1.5em;
+  }
+  .navbar-logo{
+    width: 300px !important;
+    z-index:1;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  .navbar-header{
+    width:auto !important;
+  }
+  .navbrand-responsive{
+    position: relative;
+  }
+  .button-menu-responsive{
+    right:0;position:absolute !important;
+  }
+  .ajat-text{
+    font-size:1.8em !important;
+  }
+  .ajat-emphasis-text{
+    font-size: 1.5em !important;
+  }
+  .block-text-services{
+    float: none;
+    width:100% !important;
+    display: block;
+  }
+  .block-main-services{
+    margin-top:0px !important;
+  }
+  .block-image-services{
+    float:none;
+    width:100% !important;
+    display: block;
+  }
+  .img-services{
+    width:100% !important;
+    margin-left:0;
+  }
+  .logo {
+    width: 35% !important;
+    margin-top:40px !important;
+  }
+  .typed,.typed-cursor{
+    margin-top: 40px !important;
+    font-size: 1.5em !important;
+  }
+  .btn-scroll{
+    display: none !important;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  .navbar-header{
+    width:auto !important;
+  }
+  .navbrand-responsive{
+    position: relative;
+  }
+  .button-menu-responsive{
+    right:0;position:absolute !important;
+  }
+  .ajat-text{
+    font-size:1.8em !important;
+  }
+  .ajat-emphasis-text{
+    font-size: 1.5em !important;
+  }
+  .block-text-services{
+    float: none;
+    width:100% !important;
+    display: block;
+  }
+  .block-main-services{
+    margin-top:80px !important;
+  }
+  .block-image-services{
+    float:none;
+    width:100% !important;
+    display: block;
+  }
+  .img-services{
+    width:100% !important;
+    margin-left:0;
+  }
+  .logo {
+    width: 35% !important;
+    margin-top:40px !important;
+  }
+  .typed,.typed-cursor{
+    margin-top: 40px !important;
+    font-size: 1.5em !important;
+  }
+  .btn-scroll{
+    display: none !important;
+  }
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+/* iPhone 5 ----------- */
+/*landscape*/
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  .navbar-header{
+    width:auto !important;
+  }
+  .navbrand-responsive{
+    position: relative;
+  }
+  .button-menu-responsive{
+    right:0;position:absolute !important;
+  }
+  .ajat-text{
+    font-size:1.8em !important;
+  }
+  .ajat-emphasis-text{
+    font-size: 1.5em !important;
+  }
+  .block-text-services{
+    float: left;
+    width:50% !important;
+    display: block;
+  }
+  .block-image-services{
+    float:right;
+    width:50% !important;
+    display: block;
+  }
+  .img-services{
+    width:100% !important;
+    margin-left:0;
+  }
+  .logo{
+    width:15%  !important;
+    margin-top: -50px !important;
+  }
+  .typed,.typed-cursor{
+    margin-top: 40px !important;
+    font-size: 1.5em !important;
+  }
+  .btn-scroll{
+    display: none !important;
+  }
+}
+/* iPhone 5 ----------- */
+/*iphone portrait*/
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  .navbar-header{
+    width:auto !important;
+  }
+  .navbrand-responsive{
+    position: relative;
+  }
+  .button-menu-responsive{
+    right:0;position:absolute !important;
+  }
+  .ajat-text{
+    font-size:1.8em !important;
+  }
+  .ajat-emphasis-text{
+    font-size: 1.5em !important;
+  }
+  .block-text-services{
+    float: none;
+    width:100% !important;
+    display: block;
+  }
+  .block-image-services{
+    float:none;
+    width:100% !important;
+    display: block;
+  }
+  .img-services{
+    width:100% !important;
+    margin-left:0;
+  }
+  .logo {
+    width: 35% !important;
+    margin-top:40px !important;
+  }
+  .typed,.typed-cursor{
+    margin-top: 40px !important;
+    font-size: 1.5em !important;
+  }
+  .btn-scroll{
+    display: none !important;
+  }
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
 }

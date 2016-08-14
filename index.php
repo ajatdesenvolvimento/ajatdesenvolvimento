@@ -18,7 +18,6 @@
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -41,10 +40,11 @@
                 <div class="col-lg-12">
                     <img class="logo" src="img/ajat-white-round.png" />
                     <div class="header-text">
-                      <h2 class="typed"><i>A melhor maneira de prever o futuro é criá-lo.</i><span class="author"> - Dr. Forrest C. Shaklee<span></h2>
+                      <h2 class="typed"><i>A melhor maneira de prever o futuro é criá-lo.</i>
+                        <span class="author"> - Dr. Forrest C. Shaklee<span></h2>
                       <span class="typed-cursor">|</span>
                     </div>
-                    <a class="btn btn-transparent btn-round page-scroll" href="#about">
+                    <a class="btn btn-transparent btn-round page-scroll btn-scroll" href="#about">
                         <i class="fa fa-angle-down fa-2x"></i>
                     </a>
                 </div>
@@ -55,48 +55,96 @@
     <!-- Services Section -->
     <section id="services" class="services-section">
         <div class="container container-services">
-          <div class="row">
-            <div class="col-lg-4">
+          <div class="row block-main-services">
+            <div class="col-lg-4 block-text-services">
               <div class="ajat-text">Conheça os nossos</div>
               <div class="ajat-emphasis-text animated bounceInLeft">SERVIÇOS</div>
               <div class="ajat-text">ofertados!</div>
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-8 block-image-services">
               <img src="img/servicos.png" class="img-services" />
             </div>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
+    <section id="team" class="partners-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>Trabalhos</h1>
+              <div class="col-lg-4">
+                <img src="img/alcides.jpg" class="team-profile" />
+                <div class="nick-name">
+                  Alcides Junior
                 </div>
+                <div class="staff-description">
+                  <p>Desenvolvedor back-end</p>
+                    <!-- <br>Amante das linguagens PHP e Ruby.</p> -->
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <img src="img/amanda.jpg" class="team-profile" />
+                <div class="nick-name">
+                  Amanda Tavares
+                </div>
+                <div class="staff-description">
+                  <p>Desenvolvedor front-end</p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <img src="img/profile.jpg" class="team-profile" />
+                <div class="nick-name">
+                  Lucas Weiby
+                </div>
+                <div class="staff-description">
+                  <p>Designer</p>
+                </div>
+              </div>
             </div>
         </div>
     </section>
-
-    <!-- <section id="partners" class="partners-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Parceiros</h1>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Contato</h1>
+              <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="well well-sm">
+                      <h2 class="h2-contato">
+                        Contato
+                      </h2>
+                    </div>
                 </div>
+              </div>
+          <div class="row">
+            <div class="col-lg-4 col-lg-offset-2">
+              <div class="row">
+                <div class="col-lg-12">
+                  <input type="text" class="form-control" placeholder="Nome">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <input type="email" class="form-control" placeholder="E-mail">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <input type="tel" class="form-control" placeholder="Telefone">
+                </div>
+              </div>
+            </div><!-- fim coluna 1-->
+            <div class="col-lg-4 ">
+              <div class="row">
+                <div class="col-lg-12">
+                  <textarea name="name" placeholder="Mensagem" class="form-control" rows="8" cols="40"></textarea>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <button type="button" name="button" class="btn btn-block btn-primary btn-enviar">Enviar</button>
+            </div>
+          </div>
         </div>
     </section>
 
@@ -112,7 +160,6 @@
     <script src="js/scrolling-nav.js"></script>
     <script src="js/typewriter.js"></script>
     <script src="js/custom.js"></script>
-
 </body>
 
 </html>

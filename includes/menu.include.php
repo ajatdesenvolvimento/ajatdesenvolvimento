@@ -22,8 +22,8 @@
             <ul class="nav navbar-nav navbar-right">
                 <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                 <li><a href="#intro" class="page-scroll"><span></span>Home</a></li>
-                <li><a href="#services" class="page-scroll"><span></span>Serviço</a></li>
-                <li><a href="#about" class="page-scroll"><span></span>Portifólio</a></li>
+                <li><a href="#services" class="page-scroll"><span></span>Serviços</a></li>
+                <li><a href="#team" class="page-scroll"><span></span>Equipe</a></li>
                 <li><a href="#contact" class="page-scroll"><span></span>Contato</a></li>
             </ul>
         </div>
