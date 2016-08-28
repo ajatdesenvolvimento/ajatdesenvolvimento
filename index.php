@@ -91,7 +91,7 @@
                 </div>
               </div>
               <div class="col-lg-4">
-                <img src="img/profile.jpg" class="team-profile" />
+                <img src="img/weiby.jpg" class="team-profile" />
                 <div class="nick-name">
                   Lucas Weiby
                 </div>
