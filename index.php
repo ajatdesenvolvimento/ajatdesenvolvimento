@@ -68,10 +68,10 @@
       </div>
     </section>
 
-    <section id="team" class="partners-section">
-        <div class="container">
+    <section id="team" class="team-section">
+        <div class="container container-team">
             <div class="row">
-              <div class="col-lg-4">
+              <div class="col-md-4 display-landscape d-left">
                 <img src="img/alcides.jpg" class="team-profile" />
                 <div class="nick-name">
                   Alcides Junior
@@ -81,7 +81,7 @@
                     <!-- <br>Amante das linguagens PHP e Ruby.</p> -->
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-4 display-landscape d-middle">
                 <img src="img/amanda.jpg" class="team-profile" />
                 <div class="nick-name">
                   Amanda Tavares
@@ -90,7 +90,7 @@
                   <p>Desenvolvedor front-end</p>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-4  display-landscape d-right">
                 <img src="img/weiby.jpg" class="team-profile" />
                 <div class="nick-name">
                   Lucas Weiby
@@ -104,7 +104,7 @@
     </section>
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
-        <div class="container">
+        <div class="container container-contact">
               <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="well well-sm">
