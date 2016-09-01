@@ -10,7 +10,7 @@
     <meta name="keywords" content="ajat, ajat desenvolvimento, desenvolvimento de sites, sistemas para computador, soluções web, construção de sites">
     <meta name="author" content="AJAT Desenvolvimento">
 
-    <title>New AJAT</title>
+    <title>AJAT DESENVOLVIMENTO</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -104,7 +104,15 @@
     </section>
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
+      <div class="snackbar" id="msg_contact"></div>
+
         <div class="container container-contact">
+          <div class="center-div">
+            <div class="img">
+              <img src="img/ajat-loader.gif" />
+              <br><b>Enviando...</b>
+            </div>
+          </div>
               <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="well well-sm">
@@ -118,31 +126,31 @@
             <div class="col-lg-4 col-lg-offset-2">
               <div class="row">
                 <div class="col-lg-12">
-                  <input type="text" class="form-control" placeholder="Nome">
+                  <input type="text" id="nome" class="form-control validate-me" placeholder="Nome">
                 </div>
               </div>
               <div class="row">
                 <div class="col-lg-12">
-                  <input type="email" class="form-control" placeholder="E-mail">
+                  <input type="email" id="email" class="form-control validate-me" placeholder="E-mail">
                 </div>
               </div>
               <div class="row">
                 <div class="col-lg-12">
-                  <input type="tel" class="form-control" placeholder="Telefone">
+                  <input type="tel" id="telefone" class="form-control validate-me" placeholder="Telefone">
                 </div>
               </div>
             </div><!-- fim coluna 1-->
             <div class="col-lg-4 ">
               <div class="row">
                 <div class="col-lg-12">
-                  <textarea name="name" placeholder="Mensagem" class="form-control" rows="8" cols="40"></textarea>
+                  <textarea name="name" id="mensagem" placeholder="Mensagem" class="form-control validate-me" rows="8" cols="40"></textarea>
                 </div>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-              <button type="button" name="button" class="btn btn-block btn-primary btn-enviar">Enviar</button>
+              <button type="button" name="button" id="btn_enviar" class="btn btn-block btn-primary btn-enviar">Enviar</button>
             </div>
           </div>
         </div>
@@ -151,7 +159,7 @@
     <!-- <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p> -->
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
+    <script src="js/jquery.mask.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
