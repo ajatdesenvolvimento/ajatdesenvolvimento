@@ -1,5 +1,12 @@
 //actives the typewriter on first page
 $(document).ready(function(){
+	setTimeout(function(){
+		$('#content_preloaded').slideUp(500);
+		$('#content_loaded').css('visibility','visible');
+		$(".typed").typewriter({
+			speed: 60
+		});
+	}, 3000);
 	var validateEmail = function(email) {
 	    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	    return re.test(email);
@@ -11,9 +18,7 @@ $(document).ready(function(){
 		},
 		time);
 	};
-	$(".typed").typewriter({
-				speed: 60
-	});
+
 	$('#telefone').mask('(99)9-9999-9999');
 
 	// validate form

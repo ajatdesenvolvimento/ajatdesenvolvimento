@@ -31,6 +31,10 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
+<div id="content_preloaded">
+  <img src="img/ajat-white-round.png" class="img_preloaded animated pulse  infinite" />
+</div>
+<hidden-component id="content_loadsed">
     <?php include "includes/menu.include.php";?>
 
     <!-- Intro Section -->
@@ -155,7 +159,7 @@
           </div>
         </div>
     </section>
-
+</hidden-component>
     <!-- <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p> -->
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -168,6 +172,7 @@
     <script src="js/scrolling-nav.js"></script>
     <script src="js/typewriter.js"></script>
     <script src="js/custom.js"></script>
+
 </body>
 
 </html>
