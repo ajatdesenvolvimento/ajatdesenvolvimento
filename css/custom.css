@@ -127,12 +127,14 @@ input[type=text],input[type=email],input[type=tel]{
 }
 .nick-name{
   margin-top: 8px;
-  font-family: 'Nexa Bold'
+  font-family: 'Nexa Bold';
+  color: #fff;
+  letter-spacing:2px;
 }
 .staff-description{
   font-family: 'Nexa Light';
-  color: #49484e;
-  text-shadow: 1px 1px 2px #fff;
+  color: #000;
+  letter-spacing:2px;
 }
 .product-image{
   width:200px;
