@@ -1,48 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<head>
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-    <meta name="description" content="AJAT Desenvolvimento trabalha com soluções web como sites e sistemas web. Um dos nossos diferenciais no mercado é que o cliente participa de cada etapa do desenvolvimento, possibilitando-o ter contato com o seu produto de forma direta.">
-    <meta name="keywords" content="ajat, ajat desenvolvimento, desenvolvimento de sites, sistemas para computador, soluções web, construção de sites">
-    <meta name="author" content="AJAT Desenvolvimento">
-
-    <title>AJAT DESENVOLVIMENTO</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="css/scrolling-nav.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
+<?php include 'conf/_head.php'; ?>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
 <div id="content_preloaded">
-  <img src="img/ajat-white-round.png" class="img_preloaded animated pulse  infinite" />
+  <img src="assets/img/ajat-white-round.png" class="img_preloaded animated pulse infinite" />
+  <div class="container">
+    <div class="circle0"></div>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    <div class="circle5"></div>
+  </div>
 </div>
 <hidden-component id="content_loadsed">
-    <?php include "includes/menu.include.php";?>
+    <?php include "views/_nav.php";?>
 
     <!-- Intro Section -->
     <header id="intro" class="intro-section animated fadeIn">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="logo" src="img/ajat-white-round.png" />
+                    <img class="logo" src="assets/img/ajat-white-round.png" />
                     <div class="header-text">
                       <h2 class="typed"><i>A melhor maneira de prever o futuro é criá-lo.</i>
                         <span class="author"> - Dr. Forrest C. Shaklee<span></h2>
@@ -66,7 +50,7 @@
               <div class="ajat-text">ofertados!</div>
             </div>
             <div class="col-lg-8 block-image-services">
-              <img src="img/servicos.png" class="img-services" />
+              <img src="assets/img/servicos.png" class="img-services" />
             </div>
         </div>
       </div>
@@ -76,7 +60,7 @@
         <div class="container container-team">
             <div class="row">
               <div class="col-md-4 display-landscape d-left">
-                <img src="img/alcides.jpg" class="team-profile" />
+                <img src="assets/img/alcides.jpg" class="team-profile" />
                 <div class="nick-name">
                   Alcides Junior
                 </div>
@@ -86,7 +70,7 @@
                 </div>
               </div>
               <div class="col-md-4 display-landscape d-middle">
-                <img src="img/amanda.jpg" class="team-profile" />
+                <img src="assets/img/amanda.jpg" class="team-profile" />
                 <div class="nick-name">
                   Amanda Tavares
                 </div>
@@ -95,7 +79,7 @@
                 </div>
               </div>
               <div class="col-md-4  display-landscape d-right">
-                <img src="img/weiby.jpg" class="team-profile" />
+                <img src="assets/img/weiby.jpg" class="team-profile" />
                 <div class="nick-name">
                   Lucas Weiby
                 </div>
@@ -113,7 +97,7 @@
         <div class="container container-contact">
           <div class="center-div">
             <div class="img">
-              <img src="img/ajat-loader.gif" />
+              <img src="assets/img/ajat-loader.gif" />
               <br><b>Enviando...</b>
             </div>
           </div>
@@ -160,18 +144,10 @@
         </div>
     </section>
 </hidden-component>
-    <!-- <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p> -->
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.mask.min.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
 
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
-    <script src="js/typewriter.js"></script>
-    <script src="js/custom.js"></script>
+    <!-- <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p> -->
+
+    <?php include 'conf/_scripts.php'; ?>
 
 </body>
 

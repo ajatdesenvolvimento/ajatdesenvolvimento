@@ -4,7 +4,7 @@
         <div class="navbar-header page-scroll">
           <div class="navbrand-responsive">
             <a class="navbar-brand page-scroll" href="#page-top">
-              <img class="navbar-logo" src="img/logo.png"/>
+              <img class="navbar-logo" src="assets/img/logo.png"/>
             </a>
           </div>
           <div class="button-menu-responsive">
@@ -21,10 +21,10 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                <li><a href="#intro" class="page-scroll"><span></span>Home</a></li>
-                <li><a href="#services" class="page-scroll"><span></span>Serviços</a></li>
-                <li><a href="#team" class="page-scroll"><span></span>Equipe</a></li>
-                <li><a href="#contact" class="page-scroll"><span></span>Contato</a></li>
+                <li><a href="#intro" class="page-scroll">Home</a></li>
+                <li><a href="#services" class="page-scroll">Serviços</a></li>
+                <li><a href="#team" class="page-scroll">Equipe</a></li>
+                <li><a href="#contact" class="page-scroll">Contato</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
